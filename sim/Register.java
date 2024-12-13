@@ -1,3 +1,5 @@
+package sim;
+
 public class Register {
     String name;
     float value;

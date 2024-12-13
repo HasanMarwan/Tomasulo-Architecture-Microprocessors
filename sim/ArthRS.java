@@ -1,3 +1,5 @@
+package sim;
+
 public class ArthRS {
     boolean busy;
     String opCode;

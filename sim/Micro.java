@@ -1,3 +1,5 @@
+package sim;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -12,6 +14,26 @@ public class Micro{
     ArthRS[] arthRSs;
 
     int[] memory;
+
+    public List<Instruction> getInstructionQueue() {
+        return instructionQueue;
+    }
+
+    public Register[] getRegisterFile() {
+        return registerFile;
+    }
+
+    public MemRS[] getMemRSs() {
+        return memRSs;
+    }
+
+    public ArthRS[] getArthRSs() {
+        return arthRSs;
+    }
+
+    public int[] getMemory() {
+        return memory;
+    }
 
     // initialize the size of buffers and RSs
     public void sizeInit(int registerFileSize, int memRSsize, int arthRSsize, int memorySize){

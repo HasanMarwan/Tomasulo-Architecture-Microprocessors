@@ -1,3 +1,5 @@
+package sim;
+
 public class MemRS {
     boolean busy;
     Register register; // for register as an address

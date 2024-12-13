@@ -1,3 +1,5 @@
+package sim;
+
 public class Instruction {
     String label;
     String opcode;
@@ -95,6 +97,10 @@ public class Instruction {
                 ", imm=" + imm +
                 ", address=" + address +
                 '}';
+    }
+
+    public String tableFormat(){
+       return opcode + ", " + destination + ", " + op1 + ", " + op2 + ", " + imm + ", " + address;
     }
 
 }
