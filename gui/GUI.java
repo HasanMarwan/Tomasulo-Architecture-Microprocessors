@@ -48,11 +48,11 @@ public class GUI {
         // Create a button
         JButton button = new JButton("Submit");
         button.addActionListener(e -> {
-            int registerFileSizeContent = Integer.parseInt(registerFileSize.getText());
-            int memRSsizeContent = Integer.parseInt(memRSsize.getText());
-            int arthRSsizeContent = Integer.parseInt(arthRSsize.getText());
-            int memorySizeContent = Integer.parseInt(memorySize.getText());
-            micro.sizeInit(registerFileSizeContent, memRSsizeContent, arthRSsizeContent, memorySizeContent);
+//            int registerFileSizeContent = Integer.parseInt(registerFileSize.getText());
+//            int memRSsizeContent = Integer.parseInt(memRSsize.getText());
+//            int arthRSsizeContent = Integer.parseInt(arthRSsize.getText());
+//            int memorySizeContent = Integer.parseInt(memorySize.getText());
+//            micro.sizeInit(registerFileSizeContent, memRSsizeContent, arthRSsizeContent, memorySizeContent);
             micro.populateInstructionQueue("instructions.txt");
             for (Instruction inst : micro.getInstructionQueue()) {
                 System.out.println("instruction " + inst.toString());
